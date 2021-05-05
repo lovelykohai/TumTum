@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SomethingToEat">
+
+    <Button
+        android:id="@+id/button_Submit_Food"
+        android:layout_width="140dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="27dp"
+        android:text="Go!"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterFoodSug" />
+
+    <EditText
+        android:id="@+id/enterFoodSug"
+        android:layout_width="361dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="27dp"
+        android:autofillHints='Type a genre of food, example, "Chinese food."'
+        android:ems="10"
+        android:hint="Enter a genre of food! (Example: Italian)"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TheTV" />
+
+    <Button
+        android:id="@+id/button_Back_Food"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_Surprise_Food"
+        android:layout_width="140dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="35dp"
+        android:text="Surprise me"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterFoodSug" />
+
+    <TextView
+        android:id="@+id/TheTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="106dp"
+        android:gravity="center"
+        android:text="What type of Food would I like?"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_Back_Food" />
+
+    <Switch
+        android:id="@+id/AlcoholSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="27dp"
+        android:text="18+ mode (Include alcohol)"
+        app:layout_constraintBottom_toTopOf="@+id/enterFoodSug"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
